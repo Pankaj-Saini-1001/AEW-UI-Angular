@@ -1,0 +1,79 @@
+<h2>Add Item</h2>
+
+<div class="form" [formGroup]="form">
+
+    <div>
+        <label for="item_type">Select Item Type:</label>
+        <select id="item_type" formControlName="item_type">
+          <option value="" disabled selected hidden>Select Item Type</option>
+          <option value="geyser">Geyser</option>
+          <option value="iron">Iron</option>
+          <option value="kettle">Electric Kettle</option>
+          <option value="rod">Rod</option>
+          <option value="heater">Room Heater</option>
+          <option value="induction">Induction</option>
+          <option value="jmg">JMG</option>
+          <option value="led">LED</option>
+          <option value="extension">Extension</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="special_id">Select Special ID:</label>
+        <select id="special_id" formControlName="specialId">
+            <option value="" disabled selected hidden>Select Special ID</option>
+            <option value="allTime">All Time</option>
+            <option value="winter">Winter</option>
+            <option value="summer">Summer</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="name">Product Name:</label>
+        <input id="name" formControlName="name" type="text" placeholder="Enter product name" />
+    </div>
+
+    <div class="img">
+        <label for="img">Image</label>
+        <div class="url">
+            <input type="text" placeholder="Enter image URL" formControlName="imgUrl">
+        </div>
+
+            <p>OR</p>
+
+        <mat-card class="drop" (drop)="onDrop($event)" (dragover)="onDragOver($event)">
+            <mat-icon>cloud_upload</mat-icon>
+            <p>Drag and drop image your here</p>
+            <button (click)="fileInput.click()">Browse</button>
+            <input type="file" #fileInput (change)="onFileSelect($event)" hidden>
+          </mat-card>
+    </div>
+
+    <div class="price">
+        <label for="price">Enter Price:</label>
+        <input type="text" id="price" formControlName="price" placeholder="Enter price">
+    </div>
+
+    <div class="review">
+        <label for="review">Set Reviews:</label>
+        <input type="text" id="review" formControlName="review" placeholder="Enter review">
+    </div>
+
+    <button (click)="addItem()">Add</button>
+
+</div>
+
+
+<div *ngFor="let product of products" class="product-card" >
+    <img [src]="product.imgUrl" alt="item image">
+    <div class="name">
+    <h4>{{ product.itemName }}</h4>
+    </div>
+    <div class="review">
+    <p>Reviews <br>{{ product.star }}</p>
+    </div>
+    <div class="price">
+    <p class="price">{{ product.price }}</p>
+  </div>
+  </div>
+

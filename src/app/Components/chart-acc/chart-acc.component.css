@@ -1,0 +1,19 @@
+h5 {
+    font-size: 1.5rem;
+    text-align: left; 
+    margin-bottom: 5px;
+    color: #3c3c3c; 
+
+  }
+  
+  .bar {
+    display: flex;
+    width: 80%;
+    height: auto;
+    background-color: #ffffff; 
+    border-radius: 8px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+    justify-content: center; 
+    align-items: center;
+  }

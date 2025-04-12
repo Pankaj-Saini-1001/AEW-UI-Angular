@@ -1,0 +1,29 @@
+<div class="full">
+    <div class="form">
+        <h1>LOGIN</h1>
+        <form [formGroup]="loginform">
+            <div class="inputs">
+                <label for="email"><b>Email</b></label>
+                <input type="text" formControlName="email" placeholder="enter your email">
+            
+                    <span *ngIf="emailhere?.invalid && emailhere?.touched" >invalid email</span>
+               
+            </div>
+            <div class="inputs">
+                <label for="pass"><b>Password</b></label>
+                <input type="password" formControlName="pass" placeholder="enter your password">
+         
+                    <span *ngIf="passhere?.invalid && passhere?.touched">please enter password</span>
+  
+            </div>
+            <div class="forgot">
+                <a>Forgot Password</a>
+            </div>
+            <div class="button">
+                <button (click)="postvalues()">LOGIN</button>
+            </div>
+            <p>Don't have account? <a (click)="move()">Create account </a> Or <a (click)="signup()">Signup</a></p>
+
+        </form>
+    </div>
+</div>

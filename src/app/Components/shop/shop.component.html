@@ -1,0 +1,29 @@
+<div class="full">
+<div class="search">
+    <input type="text" placeholder="Search here" [(ngModel)]="searchData">
+  </div>
+  
+  <div class="leftColumn">
+    <h3>Home Appliances</h3>
+
+    <button (click)="item('geyser')">Water Geysers</button>
+    <button (click)="item('iron')">Electric Irons</button>
+    <button (click)="item('kettle')">Electric Kettles</button>
+    <button (click)="item('rod')">Immersion Rods</button>
+    <button (click)="item('heater')">Room Heaters</button>
+    <button (click)="item('induction')">Inductions</button>
+    <button (click)="item('jmg')">Juicer Mixer Grinder</button>
+    <button (click)="item('led')">LED Bulbs</button>
+    <button (click)="item('extension')">Extensions</button>
+    
+  </div>
+
+ 
+    <div *ngFor="let product of filteredproducts" class="product-card">
+      <img [src]="product.imgUrl" alt="{{ product.name }}">
+      <h4><a (click)="towishlist(product)">{{ product.itemName }}</a></h4>
+      <p>Reviews <br>{{ product.star }}</p>
+      <p class="price">{{ product.price }}</p>
+    </div>
+    
+</div>

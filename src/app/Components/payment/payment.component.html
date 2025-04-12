@@ -1,0 +1,49 @@
+<div class="full">
+
+<mat-horizontal-stepper [linear]="true" #stepper>
+    <!-- Step 1: Order Summary -->
+    <mat-step >
+      <h3>Order Summary</h3>
+        <div *ngFor="let item of product" class="info">
+            <h5>Item Name:{{ item.itemName }}</h5>
+            <p>Price: {{ item.price }}</p>
+            <p>Quantity:1</p>
+        </div>
+      <div class="btns">
+        <button matStepperPrevious>Cancel</button>
+        <button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+  
+    <!-- Step 2: Address -->
+    <mat-step >
+        <h3>Address</h3>
+        <mat-radio-group >
+            <mat-radio-button class="saved" value="saved">saved address</mat-radio-button>
+            <mat-radio-button class="another" value="another" (click)="addAdd()">another address</mat-radio-button>
+            <div *ngIf="showField">
+                <input type="text" placeholder="enter address">
+              </div>
+          </mat-radio-group>
+        <div class="btns">
+          <button matStepperPrevious>Back</button>
+          <button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+  
+    <!-- Step 3: Payment Options -->
+    <mat-step >
+        <h3>Payment Options</h3>
+        <mat-radio-group formControlName="paymentMethod">
+          <mat-radio-button class="example-margin" value="COD">Cash on Delivery</mat-radio-button>
+          <mat-radio-button class="example-margin" value="GPay">Google Pay</mat-radio-button>
+          <mat-radio-button class="example-margin" value="CreditCard">Credit Card</mat-radio-button>
+        </mat-radio-group>
+        <div class="btns">
+          <button matStepperPrevious>Back</button>
+          <button (click)="onSubmit()">Submit and explore more</button>
+        </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+  
+</div>

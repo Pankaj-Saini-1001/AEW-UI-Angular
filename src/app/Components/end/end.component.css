@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .footer {
+    background-color: #1f1e1eee; 
+    color: #fff; 
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .about .logo {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .services{
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: #f1c40f; 
+    margin-bottom: 10px;
+  }
+  
+  p, ul, li, a {
+    color: #ecf0f1; 
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff; 
+  }
+  
+  a:hover {
+    color: #f1c40f; 
+  }
+  
+
+  .bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #6b6b6b; 
+    padding-top: 15px;
+  }
+  
+  .bottom ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
+  .bottom ul li {
+    font-size: 14px;
+  }
+  
+  .bottom ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  
+  .bottom ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  

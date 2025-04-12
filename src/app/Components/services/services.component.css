@@ -1,0 +1,244 @@
+
+
+.full  {
+  background-color:rgb(243, 241, 240);
+}
+
+
+
+.header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.heading h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 15px;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.header ul li {
+  margin-bottom: 20px;
+}
+
+.header ul li h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header ul li p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.header .services-list {
+  margin-left: 20px;
+}
+
+
+
+
+
+
+  .app-card {margin-top: 20px;
+    position: relative;
+    width: 100%; 
+    min-height: 90vh; 
+    background-image: url('C:/Users/SAINI/Desktop/AEW/AEW_UI/src/assets/images/jmg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.app-card p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 80%; /* Restrict text width for better readability */
+}
+
+.app-card button {
+    background: none; 
+    border: none;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.app-card button:hover {
+    color: #199f72; 
+}
+
+
+mat-tab-group {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+mat-tab{
+  font-weight: bold;
+  padding: 12px; 
+  background-color: #f1f1f1; 
+  border-radius: 8px; 
+  height: 50px;
+}
+
+mat-tab:hover {
+  background-color: #e0e0e0; 
+}
+
+.acc {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  width: 90%;
+  /* background-image: url('C:/Users/SAINI/Desktop/AEW/src/assets/images/home-cat-ha.png'); */
+
+}
+
+.acc h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.acc h3 {
+  font-size: 1.5rem;
+  color: #1d1c1c;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.acc p {
+  font-size: 1rem;
+  color: #3e3e3e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.acc ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.acc ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.acc ul li strong {
+  color: #1f2020;
+}
+
+.acc ul li a {
+  color: #00796b;
+  text-decoration: underline;
+}
+
+.acc ul li a:hover {
+  color: #004c43;
+}
+
+.acc h3 {
+  color: #00796b;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+
+
+.repair-section {
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  width: 90%;
+}
+
+.repair-section h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.repair-section h3 {
+  font-size: 1.5rem;
+  color: #00796b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.repair-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.repair-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.repair-section ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.repair-section ul li strong {
+  color: #00796b;
+}
+
+.repair-section button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.repair-section button:hover {
+  background-color: #004d40;
+}
+
+.repair-section button:disabled {
+  background-color: #dcdcdc;
+}
+

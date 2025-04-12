@@ -1,0 +1,23 @@
+
+h2[mat-dialog-title] {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+
+  
+  button[mat-button] {
+    font-size: 14px;
+    color: #1976d2; 
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  button[mat-button]:hover {
+    background-color: rgba(25, 118, 210, 0.1);
+    border: 1px solid #1976d2;
+  }
+  

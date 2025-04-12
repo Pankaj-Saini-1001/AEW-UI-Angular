@@ -1,0 +1,75 @@
+.full {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  mat-horizontal-stepper {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  mat-step h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    margin-bottom: 15px;
+  }
+  
+  .info h5, .info p {
+    margin: 5px 0;
+  }
+  
+  mat-radio-group {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  mat-radio-button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .btns button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .btns button:hover {
+    background-color: #003930;
+  }
+  
+  button:disabled {
+    background-color: #dcdcdc;
+  }
+  
+  mat-radio-button.saved,
+  mat-radio-button.another {
+    font-size: 1rem;
+  }
+  
+  
+  mat-radio-button.another {
+    color: #0288d1;
+  }
+  

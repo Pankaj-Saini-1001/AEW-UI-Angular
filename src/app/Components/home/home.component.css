@@ -1,0 +1,17 @@
+ .graphs { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    align-items: center; 
+    width: 90%;
+    margin-left: 10%;
+  }
+  h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(94, 94, 94);
+    margin-left: 145px;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+

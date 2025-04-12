@@ -1,0 +1,17 @@
+<div class="full">
+    <h2>Product will appear here--</h2>
+    
+        <div *ngFor="let product of data" class="product-card" >
+            <img [src]="product.imgUrl">
+            <div class="name">
+            <h4>{{ product.itemName }}</h4>
+            </div>
+            <div class="review">
+            <p>Reviews <br>{{ product.star }}</p>
+            </div>
+            <div class="price">
+            <p class="price">{{ product.price }}</p>
+          </div>
+          </div>
+    
+    </div>

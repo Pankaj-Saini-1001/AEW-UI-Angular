@@ -1,0 +1,51 @@
+<div class="full">
+    <div class="form">
+        <h1>REGISTER</h1>
+        <form [formGroup]="registerform">
+            <div class="inputs">
+                <label for="name"><b>Name</b></label>
+                <input type="text" formControlName="name" placeholder="enter your name">
+            
+                    <span *ngIf="namehere?.invalid && namehere?.touched" >enter your name</span>
+               
+            </div>
+
+            <div class="inputs">
+                <label for="email"><b>Email</b></label>
+                <input type="text" formControlName="email" placeholder="enter your email">
+            
+                    <span *ngIf="emailhere?.invalid && emailhere?.touched" >invalid email</span>
+               
+            </div>
+
+            <div class="inputs">
+                <label for="phone"><b>Phone no.</b></label>
+                <input type="number" formControlName="phone" placeholder="enter your phone no.">
+            
+                    <span *ngIf="phonehere?.invalid && phonehere?.touched" >invalid phone no.</span>
+               
+            </div>
+
+            <div class="inputs">
+                <label for="address"><b>Address</b></label>
+                <input type="text" formControlName="address" placeholder="enter your address">
+            
+                    <span *ngIf="addresshere?.invalid && addresshere?.touched" >enter address</span>
+               
+            </div>
+
+            <div class="inputs">
+                <label for="pass"><b>Password</b></label>
+                <input type="password" formControlName="pass" placeholder="enter your password">
+         
+                    <span *ngIf="passhere?.invalid && passhere?.touched">password must contain</span>
+  
+            </div>
+
+            <div class="button">
+                <button (click)="postvalues()">Register</button>
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<nav class="navbar">
+
+    <div class="logo">
+    <a  matTooltip="Atul Electronics and Works" routerLink="home"><img src="assets/images/Screenshot 2025-01-02 001108.jpg" alt="logo" height="40"></a>
+    </div>
+
+    <ul class="row-items">
+        <li class="nav-item">
+            <a matTooltip="Home" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a matTooltip="All Seasonal Offers"  routerLink="season" routerLinkActive="active"  matBadge="16" matBadgeOverlap="false" >Seasonal</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Our all Products ar here" routerLink="shop" routerLinkActive="active">Shop</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Services that we provide are here" routerLink="services" routerLinkActive="active">Services</a>
+        </li>
+
+        <div class="search-bar">
+            <input type="text" routerLink="search" placeholder="What are you searching for..."  />
+        </div>
+
+        <li class="nav-item">
+            <a  matTooltip="Add new Item" routerLink="add" routerLinkActive="active">Add</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="My Cart" routerLink="wishlist" routerLinkActive="active" matBadge="1" matBadgeOverlap="false"><img src="https://cdn-icons-png.flaticon.com/128/3643/3643914.png" alt="" height="25"></a>
+        </li>
+
+        <li class="nav-item">
+            <div class="menu-button">
+                <button mat-button [matMenuTriggerFor]="menu" matTooltip="Menu" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></button>            
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item [routerLink]="'/login'">Login</button>
+                <button mat-menu-item (click)="address()">My Address</button>
+                <button mat-menu-item (click)="order()">MY Orders</button>
+                <button mat-menu-item (click)="logout()">Logout</button>
+              </mat-menu>
+            </div>
+        </li>
+        
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>

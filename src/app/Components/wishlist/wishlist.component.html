@@ -1,0 +1,11 @@
+<div class="wishlist">
+    <div *ngFor="let item of wishlist" class="wishlist-item">
+      <img [src]="item.imgUrl">
+      <h4>{{ item.itemName }}</h4>
+      <p>Reviews: {{ item.reviews }}</p>
+      <p>Price: {{ item.price }}</p>
+      <a routerLink="payment">Buy Now</a>
+    </div>
+</div>
+
+ <router-outlet></router-outlet>
